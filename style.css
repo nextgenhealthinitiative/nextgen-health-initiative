@@ -1,7 +1,28 @@
-/* ================================
-   NGHI - NEXTGEN HEALTH INITIATIVE
-   MAIN STYLESHEET
-================================ */
+/* =========================================
+   NEXTGEN HEALTH INITIATIVE
+   NGHI BRAND STYLES
+   Green + Blue
+========================================= */
+
+:root {
+    --green: #087f5b;
+    --green-dark: #056b4d;
+    --green-light: #e8f7f1;
+
+    --blue: #075985;
+    --blue-light: #e9f3fb;
+
+    --dark: #123d3a;
+    --text: #526d6b;
+    --white: #ffffff;
+
+    --border: #dcebe6;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
 
 * {
     margin: 0;
@@ -15,9 +36,9 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--dark);
     line-height: 1.7;
-    color: #183b3a;
-    background: #ffffff;
 }
 
 a {
@@ -36,47 +57,664 @@ ul {
 }
 
 
-/* ================================
+/* =========================================
    HEADER
-================================ */
+========================================= */
 
 header {
-    background: #ffffff;
-    border-bottom: 1px solid #e2ece9;
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    background: var(--white);
+
+    border-bottom: 2px solid var(--green-light);
 }
 
 .navbar {
     min-height: 75px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 30px;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: #087f5b;
-    white-space: nowrap;
+
+    color: var(--green);
 }
 
 .logo span {
-    color: #075985;
+    color: var(--blue);
 }
 
 .nav-links {
     display: flex;
     align-items: center;
+
     gap: 24px;
 }
 
 .nav-links a {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #315b58;
+
+    color: var(--dark);
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dff5eb 0%,
+            #eefaf6 50%,
+            #e8f3fa 100%
+        );
+
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 90px 0;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: var(--green-light);
+    color: var(--green);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    color: var(--dark);
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--green);
+}
+
+.hero p {
+    max-width: 720px;
+
+    font-size: 1.08rem;
+
+    color: var(--text);
+
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 14px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 23px;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    border: 2px solid transparent;
+
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--green-dark);
+
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--white);
+
+    color: var(--green);
+
+    border-color: var(--green);
+}
+
+.btn-secondary:hover {
+    background: var(--green);
+
+    color: var(--white);
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    padding: 90px 0;
+}
+
+.section-light {
+    background: #f1f9f6;
+}
+
+.section-title {
+    max-width: 720px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.3rem;
+
+    color: var(--dark);
+
+    margin-bottom: 12px;
+}
+
+.section-title h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    background: var(--green);
+
+    margin: 14px auto 0;
+
+    border-radius: 10px;
+}
+
+.section-title p {
+    color: var(--text);
+}
+
+
+/* =========================================
+   ABOUT / FOUNDER
+========================================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+}
+
+.about-text h3 {
+    font-size: 1.45rem;
+
+    color: var(--green);
+
+    margin-bottom: 14px;
+}
+
+.about-text p {
+    color: var(--text);
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: var(--white);
+
+    padding: 32px;
+
+    border: 1px solid var(--border);
+
+    border-top: 4px solid var(--green);
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(8, 127, 91, 0.12);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--green-light);
+
+    color: var(--green);
+
+    border-radius: 10px;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: var(--dark);
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--text);
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.project {
+    background: var(--white);
+
+    padding: 32px;
+
+    border-radius: 12px;
+
+    border: 1px solid var(--border);
+
+    border-left: 5px solid var(--green);
+
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(8, 127, 91, 0.10);
+}
+
+.project-tag {
+    display: inline-block;
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    color: var(--green);
+
+    background: var(--green-light);
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: var(--dark);
+
+    margin-bottom: 12px;
+}
+
+.project p {
+    color: var(--text);
+}
+
+
+/* =========================================
+   PUBLICATIONS
+========================================= */
+
+.publication-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.publication {
+    padding: 30px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-left: 5px solid var(--green);
+
+    border-radius: 10px;
+}
+
+.publication h3 {
+    color: var(--dark);
+
+    margin-bottom: 10px;
+}
+
+.publication p {
+    color: var(--text);
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   IMPACT
+========================================= */
+
+.impact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.impact-box {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-radius: 12px;
+
+    background: var(--green-light);
+
+    border: 1px solid #c9eadd;
+}
+
+.impact-box h3 {
+    font-size: 2.7rem;
+
+    color: var(--green);
+
+    margin-bottom: 8px;
+}
+
+.impact-box p {
+    color: var(--dark);
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--green),
+            var(--blue)
+        );
+
+    color: var(--white);
+
+    text-align: center;
+}
+
+.cta .section-title h2 {
+    color: var(--white);
+}
+
+.cta .section-title h2::after {
+    background: var(--white);
+}
+
+.cta .section-title p {
+    color: var(--white);
+}
+
+.cta .hero-buttons {
+    justify-content: center;
+}
+
+.cta .btn-secondary {
+    background: var(--white);
+
+    color: var(--green);
+
+    border-color: var(--white);
+}
+
+.cta .btn-secondary:hover {
+    background: transparent;
+
+    color: var(--white);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #0c3029;
+
+    color: var(--white);
+
+    padding: 60px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+footer h3,
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer h3 {
+    color: #66d9a9;
+}
+
+footer p {
+    color: #b7cbc8;
+}
+
+footer ul li {
+    margin-bottom: 9px;
+}
+
+footer a {
+    color: #b7cbc8;
+
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #66d9a9;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+
+    text-align: center;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 18px 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 65px 0;
+
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-grid,
+    .cards,
+    .project-grid,
+    .publication-list,
+    .impact-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 2.45rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.9rem;
+    }
+
+    .card,
+    .project,
+    .publication {
+        padding: 25px;
+    }
+
+    .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}    color: #315b58;
     transition: 0.3s ease;
 }
 
