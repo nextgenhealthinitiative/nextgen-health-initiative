@@ -1,12 +1,7 @@
-/* =========================================================
-   NEXTGEN HEALTH INITIATIVE
-   Main Stylesheet
-   ========================================================= */
-
-
-/* =========================
-   GLOBAL
-   ========================= */
+/* ================================
+   NGHI - NEXTGEN HEALTH INITIATIVE
+   MAIN STYLESHEET
+================================ */
 
 * {
     margin: 0;
@@ -41,13 +36,13 @@ ul {
 }
 
 
-/* =========================
+/* ================================
    HEADER
-   ========================= */
+================================ */
 
 header {
     background: #ffffff;
-    border-bottom: 1px solid #e6eeee;
+    border-bottom: 1px solid #e2ece9;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -62,21 +57,535 @@ header {
 }
 
 .logo {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #087f5b;
     white-space: nowrap;
 }
 
 .logo span {
-    color: #087f5b;
+    color: #075985;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #315b58;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #087f5b;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f8f1 0%,
+            #f5fbf9 55%,
+            #e9f3fb 100%
+        );
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 90px 0;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: #d8f3e8;
+    color: #087f5b;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    color: #123d3a;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #087f5b;
+}
+
+.hero p {
+    max-width: 720px;
+    font-size: 1.08rem;
+    color: #526d6b;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.btn {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 7px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #087f5b;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #056b4d;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #ffffff;
+    color: #087f5b;
+    border-color: #087f5b;
+}
+
+.btn-secondary:hover {
+    background: #087f5b;
+    color: #ffffff;
+}
+
+
+/* ================================
+   SECTIONS
+================================ */
+
+section {
+    padding: 90px 0;
+}
+
+.section-light {
+    background: #f4f9f8;
+}
+
+.section-title {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.3rem;
+    color: #123d3a;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #617573;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.about-text h3 {
+    font-size: 1.45rem;
+    color: #087f5b;
+    margin-bottom: 14px;
+}
+
+.about-text p {
+    color: #526d6b;
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
+
+.card {
+    background: #ffffff;
+    padding: 32px;
+    border: 1px solid #e1ece9;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(16, 70, 60, 0.09);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dff5eb;
+    color: #087f5b;
+
+    border-radius: 10px;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #173f3c;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #647674;
+}
+
+
+/* ================================
+   PROJECTS
+================================ */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project {
+    background: #ffffff;
+    padding: 32px;
+
+    border-radius: 12px;
+    border: 1px solid #e1ece9;
+
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(16, 70, 60, 0.08);
+}
+
+.project-tag {
+    display: inline-block;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    color: #087f5b;
+    background: #e1f6ed;
+
+    padding: 6px 11px;
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: #173f3c;
+    margin-bottom: 12px;
+}
+
+.project p {
+    color: #647674;
+}
+
+
+/* ================================
+   PUBLICATIONS
+================================ */
+
+.publication-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.publication {
+    padding: 30px;
+
+    background: #f4f9f8;
+
+    border-left: 4px solid #087f5b;
+
+    border-radius: 8px;
+}
+
+.publication h3 {
+    color: #173f3c;
+    margin-bottom: 10px;
+}
+
+.publication p {
+    color: #647674;
+}
+
+
+/* ================================
+   IMPACT
+================================ */
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.impact-box {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-radius: 12px;
+
+    background: #eaf7f2;
+}
+
+.impact-box h3 {
+    font-size: 2.7rem;
+    color: #087f5b;
+
+    margin-bottom: 8px;
+}
+
+.impact-box p {
+    color: #526d6b;
+    font-weight: 600;
+}
+
+
+/* ================================
+   CONTACT / CTA
+================================ */
+
+.cta {
+    background:
+        linear-gradient(
+            135deg,
+            #087f5b,
+            #075985
+        );
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+
+    color: #ffffff;
+    opacity: 0.92;
+}
+
+.cta .hero-buttons {
+    justify-content: center;
+}
+
+.cta .btn-secondary {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.cta .btn-secondary:hover {
+    background: #ffffff;
+    color: #087f5b;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #102f2d;
+    color: #ffffff;
+
+    padding: 60px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+footer h3,
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #b7cbc8;
+}
+
+footer ul li {
+    margin-bottom: 9px;
+}
+
+footer a {
+    color: #b7cbc8;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+
+    text-align: center;
+
+    font-size: 0.85rem;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 65px 0;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-grid,
+    .cards,
+    .project-grid,
+    .publication-list,
+    .impact-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .footer-grid {
+        gap: 30px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 2.45rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.9rem;
+    }
+
+    .card,
+    .project,
+    .publication {
+        padding: 25px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}}
 
 .nav-links a {
     font-size: 0.92rem;
