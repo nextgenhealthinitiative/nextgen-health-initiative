@@ -5,29 +5,25 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="NextGen Health Initiative (NGHI) — advancing health education, research, community health and stronger communities."
-    >
+    <meta name="description"
+        content="NextGen Health Initiative (NGHI) is a youth-led public health organisation advancing health education, research, advocacy and community health development.">
 
-    <meta
-        name="keywords"
-        content="NextGen Health Initiative, NGHI, public health, health education, community health, health research, Nigeria"
-    >
+    <meta name="keywords"
+        content="NextGen Health Initiative, NGHI, Public Health, Health Research, Community Health, Health Education, Epidemiology, Health Advocacy, Nigeria">
 
-    <meta
-        name="author"
-        content="NextGen Health Initiative"
-    >
+    <meta name="author" content="NextGen Health Initiative">
 
-    <title>NextGen Health Initiative | NGHI</title>
+    <meta name="robots" content="index, follow">
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#075b46">
+
+    <title>NextGen Health Initiative | Advancing Health, Strengthening Communities</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -36,71 +32,111 @@
 
 
 <!-- =====================================================
-     HEADER
+     HEADER & NAVIGATION
 ===================================================== -->
 
 <header class="site-header">
 
     <div class="container navbar">
 
-        <a href="#home" class="brand">
+        <a href="index.html" class="brand">
 
-            <img
-                src="nghi-logo.png"
-                alt="NextGen Health Initiative logo"
-            >
+            <img src="images/logo.png"
+                 alt="NextGen Health Initiative Logo">
 
             <div class="brand-name">
+
                 <strong>NextGen</strong>
+
                 <span>Health Initiative</span>
+
             </div>
 
         </a>
 
 
-        <nav>
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <nav class="main-navigation" id="mainNavigation">
 
             <ul class="nav-links">
 
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="index.html" class="active">Home</a>
                 </li>
 
                 <li>
-                    <a href="#about">About</a>
+                    <a href="about.html">About Us</a>
                 </li>
 
                 <li>
-                    <a href="#founder">Founder</a>
+                    <a href="programmes.html">Programmes</a>
+                </li>
+
+                <li class="dropdown">
+
+                    <a href="projects.html">Our Work</a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="projects.html">
+                                Projects & Initiatives
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="advocacy.html">
+                                Advocacy & Campaigns
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="impact.html">
+                                Our Impact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="partnerships.html">
+                                Partnerships
+                            </a>
+                        </li>
+
+                    </ul>
+
                 </li>
 
                 <li>
-                    <a href="#focus">Focus Areas</a>
+                    <a href="research.html">Research</a>
                 </li>
 
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="news.html">News & Updates</a>
                 </li>
 
                 <li>
-                    <a href="#awareness">Awareness</a>
+                    <a href="leadership.html">Leadership</a>
                 </li>
 
                 <li>
-                    <a href="#publications">Publications</a>
+                    <a href="contact.html">Contact</a>
                 </li>
 
                 <li>
-                    <a href="#impact">Impact</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-                <li>
-                    <a href="#involved" class="nav-volunteer">
-                        Volunteer
+                    <a href="get-involved.html"
+                       class="nav-cta">
+                        Get Involved
                     </a>
                 </li>
 
@@ -118,76 +154,168 @@
 
 
 <!-- =====================================================
-     HERO
+     HERO SECTION
 ===================================================== -->
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
     <div class="container hero-grid">
 
         <div class="hero-content">
 
             <span class="eyebrow">
+
                 NEXTGEN HEALTH INITIATIVE
+
             </span>
 
+
             <h1>
-                Healthier People.
-                <span>Stronger Communities.</span>
-                Better Tomorrow.
+
+                Advancing Health.
+                <span>Generating Evidence.</span>
+                Strengthening Communities.
+
             </h1>
+
 
             <p>
 
-                We are a youth-led public health organization working
-                to improve health knowledge, support research,
-                engage communities and contribute to practical,
-                evidence-informed solutions to public health challenges.
+                We are a youth-led public health organisation
+                working to improve health knowledge, support
+                research, promote informed health decisions
+                and contribute to healthier communities.
 
             </p>
 
 
             <div class="hero-actions">
 
-                <a
-                    href="#about"
-                    class="btn btn-primary"
-                >
-                    Learn About NGHI
+                <a href="about.html" class="btn btn-primary">
+
+                    Discover NGHI
+
                 </a>
 
-                <a
-                    href="#projects"
-                    class="btn btn-outline"
-                >
+
+                <a href="projects.html" class="btn btn-outline">
+
                     Explore Our Work
+
                 </a>
+
+            </div>
+
+
+            <div class="hero-note">
+
+                <span class="hero-note-line"></span>
+
+                <p>
+                    Health knowledge should lead to meaningful action.
+                </p>
 
             </div>
 
         </div>
 
 
+
         <div class="hero-visual">
 
-            <div class="hero-card">
+            <div class="hero-image">
 
-                <div class="hero-logo-wrap">
+                <img src="images/hero-image.jpg"
+                     alt="Community health engagement and public health activities">
 
-                    <img
-                        src="nghi-logo.png"
-                        alt="NGHI logo"
-                    >
+            </div>
 
-                </div>
 
-                <span>
-                    HEALTH • RESEARCH • COMMUNITY
-                </span>
+            <div class="hero-overlay-card">
+
+                <span>OUR COMMITMENT</span>
 
                 <h3>
-                    Building healthier communities through knowledge and action.
+                    Making health knowledge useful, accessible
+                    and relevant to everyday life.
                 </h3>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ORGANISATIONAL INTRODUCTION
+===================================================== -->
+
+<section class="section introduction" id="introduction">
+
+    <div class="container">
+
+        <div class="introduction-grid">
+
+            <div class="introduction-heading">
+
+                <span class="section-label">
+                    GET TO KNOW US
+                </span>
+
+                <h2>
+
+                    Health challenges require more than
+                    awareness. They require action.
+
+                </h2>
+
+            </div>
+
+
+            <div class="introduction-content">
+
+                <p>
+
+                    NextGen Health Initiative (NGHI) is a youth-led
+                    public health organisation committed to
+                    advancing health education, research,
+                    advocacy and community health development.
+
+                </p>
+
+
+                <p>
+
+                    We recognise that improving health outcomes
+                    requires informed individuals, stronger
+                    communities, accessible health information
+                    and the effective use of evidence.
+
+                </p>
+
+
+                <p>
+
+                    Through our programmes, projects and
+                    collaborations, we work towards addressing
+                    public health challenges and encouraging
+                    meaningful participation in health development.
+
+                </p>
+
+
+                <a href="about.html" class="text-link">
+
+                    More About NGHI
+
+                    <span>→</span>
+
+                </a>
 
             </div>
 
@@ -200,1258 +328,80 @@
 
 
 <!-- =====================================================
-     ABOUT
+     MISSION & VISION
 ===================================================== -->
 
-<section id="about" class="section">
+<section class="mission-section section-soft">
 
     <div class="container">
 
         <div class="section-heading">
 
             <span class="section-label">
-                WHO WE ARE
+                OUR FOUNDATION
             </span>
 
             <h2>
-                About NGHI
+                What Drives Our Work
             </h2>
 
             <p>
-                Building a healthier future through knowledge,
-                research, community engagement and practical action.
+
+                Our commitment is guided by a shared vision
+                of healthier people and stronger communities.
+
             </p>
 
         </div>
 
 
-        <div class="about-grid">
 
-            <div class="content-card">
+        <div class="mission-grid">
 
-                <span class="card-number">
+
+            <article class="mission-card">
+
+                <div class="mission-icon">
                     01
-                </span>
+                </div>
 
-                <h3>
-                    Who We Are
-                </h3>
-
-                <p>
-
-                    NextGen Health Initiative (NGHI) is a youth-led
-                    public health organization committed to making
-                    health information more understandable,
-                    accessible and useful to individuals and
-                    communities.
-
-                </p>
-
-                <p>
-
-                    We work across health education, public health
-                    research, community engagement and health advocacy.
-
-                </p>
-
-            </div>
-
-
-            <div class="content-card">
-
-                <span class="card-number">
-                    02
-                </span>
 
                 <h3>
                     Our Mission
                 </h3>
 
+
                 <p>
 
-                    To promote better health outcomes through
-                    health education, evidence-informed research,
-                    community engagement and collaboration.
+                    To contribute to improved health outcomes
+                    through public health research, accessible
+                    health education, advocacy, community
+                    engagement and strategic collaboration.
 
                 </p>
 
-                <h3 class="sub-heading">
+            </article>
+
+
+
+            <article class="mission-card">
+
+                <div class="mission-icon">
+                    02
+                </div>
+
+
+                <h3>
                     Our Vision
                 </h3>
+
 
                 <p>
 
                     A healthier society where individuals and
                     communities have the knowledge, opportunities
                     and support needed to make informed health
-                    decisions.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOUNDER
-===================================================== -->
-
-<section id="founder" class="section section-soft">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                LEADERSHIP
-            </span>
-
-            <h2>
-                Meet the Founder
-            </h2>
-
-            <p>
-                The person behind the vision and development
-                of NextGen Health Initiative.
-            </p>
-
-        </div>
-
-
-        <div class="founder-grid">
-
-            <div class="founder-main">
-
-                <div class="founder-badge">
-                    FOUNDER &amp; TEAM LEAD
-                </div>
-
-                <h3>
-                    Olawuwo Idris Adeniyi
-                </h3>
-
-                <p>
-
-                    Idris Adeniyi is an Anatomy graduate with a
-                    growing focus on public health research,
-                    health education, epidemiology and community
-                    health.
-
-                </p>
-
-                <p>
-
-                    He founded NextGen Health Initiative with the
-                    goal of creating a platform where health
-                    information, research and community action
-                    can come together to address practical health
-                    challenges.
-
-                </p>
-
-                <p>
-
-                    His work spans public health research,
-                    health communication, evidence synthesis and
-                    community-focused initiatives.
-
-                </p>
-
-
-                <a
-                    href="https://idrisolawuwo.github.io/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-primary"
-                >
-                    View Founder's Portfolio
-                </a>
-
-            </div>
-
-
-            <div class="interest-card">
-
-                <h3>
-                    Areas of Interest
-                </h3>
-
-                <ul>
-
-                    <li>
-                        Public Health Research
-                    </li>
-
-                    <li>
-                        Epidemiology
-                    </li>
-
-                    <li>
-                        Community Health
-                    </li>
-
-                    <li>
-                        Health Education &amp; Communication
-                    </li>
-
-                    <li>
-                        Maternal &amp; Child Health
-                    </li>
-
-                    <li>
-                        Environmental Health
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOCUS AREAS
-===================================================== -->
-
-<section id="focus" class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                WHAT WE DO
-            </span>
-
-            <h2>
-                Our Focus Areas
-            </h2>
-
-            <p>
-                Our work responds to practical health challenges
-                affecting individuals, families and communities.
-            </p>
-
-        </div>
-
-
-        <div class="focus-grid">
-
-
-            <article class="focus-card">
-
-                <div class="focus-icon">
-                    +
-                </div>
-
-                <h3>
-                    Community Health
-                </h3>
-
-                <p>
-                    Promoting practical health knowledge and
-                    community-based approaches to improve health
-                    outcomes.
-                </p>
-
-            </article>
-
-
-            <article class="focus-card">
-
-                <div class="focus-icon">
-                    ⌕
-                </div>
-
-                <h3>
-                    Research &amp; Epidemiology
-                </h3>
-
-                <p>
-                    Supporting public health research and the use
-                    of evidence to better understand health
-                    challenges.
-                </p>
-
-            </article>
-
-
-            <article class="focus-card">
-
-                <div class="focus-icon">
-                    ♥
-                </div>
-
-                <h3>
-                    Maternal &amp; Child Health
-                </h3>
-
-                <p>
-                    Supporting health education and awareness
-                    around maternal, newborn and child health.
-                </p>
-
-            </article>
-
-
-            <article class="focus-card">
-
-                <div class="focus-icon">
-                    ◉
-                </div>
-
-                <h3>
-                    Environmental Health
-                </h3>
-
-                <p>
-                    Promoting healthier environments through
-                    awareness of sanitation, waste management
-                    and environmental health risks.
-                </p>
-
-            </article>
-
-
-            <article class="focus-card">
-
-                <div class="focus-icon">
-                    ✦
-                </div>
-
-                <h3>
-                    Health Education
-                </h3>
-
-                <p>
-                    Translating health information into clear,
-                    relatable and actionable messages for the
-                    public.
-                </p>
-
-            </article>
-
-
-            <article class="focus-card">
-
-                <div class="focus-icon">
-                    ↗
-                </div>
-
-                <h3>
-                    Health Advocacy
-                </h3>
-
-                <p>
-                    Encouraging informed conversations and
-                    practical action around important public
-                    health issues.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROJECTS
-===================================================== -->
-
-<section id="projects" class="section section-soft">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                OUR WORK
-            </span>
-
-            <h2>
-                Projects &amp; Research
-            </h2>
-
-            <p>
-                Selected work demonstrating our commitment to
-                evidence-informed public health action.
-            </p>
-
-        </div>
-
-
-        <div class="project-grid">
-
-
-            <article class="project-card">
-
-                <span class="project-tag">
-                    ANTIMICROBIAL RESISTANCE
-                </span>
-
-                <h3>
-                    Responsible Antibiotic Use &amp; AMR
-                </h3>
-
-                <p>
-
-                    Exploring antibiotic-use behaviours and
-                    knowledge gaps, with a focus on responsible
-                    antibiotic use and antimicrobial resistance.
-
-                </p>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <span class="project-tag">
-                    PUBLIC HEALTH RESEARCH
-                </span>
-
-                <h3>
-                    Cholera Research Project
-                </h3>
-
-                <p>
-
-                    Contributing to research and evidence synthesis
-                    around cholera, including literature review,
-                    scientific evidence annotation and research
-                    manuscript development.
-
-                </p>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <span class="project-tag">
-                    HEALTH EDUCATION
-                </span>
-
-                <h3>
-                    Community Health Education
-                </h3>
-
-                <p>
-
-                    Developing accessible health information and
-                    educational activities that help people
-                    understand everyday health risks and prevention
-                    strategies.
-
-                </p>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <span class="project-tag">
-                    HEALTH COMMUNICATION
-                </span>
-
-                <h3>
-                    Online Health Talks &amp; Webinars
-                </h3>
-
-                <p>
-
-                    Creating spaces for practical conversations
-                    around public health topics, prevention,
-                    healthy behaviours and community wellbeing.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     HEALTH AWARENESS
-===================================================== -->
-
-<section id="awareness" class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                PUBLIC HEALTH AWARENESS
-            </span>
-
-            <h2>
-                Health Awareness
-            </h2>
-
-            <p>
-
-                Public health awareness campaigns and educational
-                activities marking important health observances
-                and addressing issues that matter to communities.
-
-            </p>
-
-        </div>
-
-
-        <div class="awareness-grid">
-
-
-            <article class="awareness-card">
-
-                <span class="awareness-date">
-                    WORLD HEALTH
-                </span>
-
-                <h3>
-                    Health Awareness Campaigns
-                </h3>
-
-                <p>
-
-                    NGHI uses important health observances as
-                    opportunities to share practical, evidence-based
-                    information with the public.
-
-                </p>
-
-            </article>
-
-
-            <article class="awareness-card">
-
-                <span class="awareness-date">
-                    COMMUNITY EDUCATION
-                </span>
-
-                <h3>
-                    Health Education &amp; Outreach
-                </h3>
-
-                <p>
-
-                    Our awareness activities focus on making
-                    public health information clear, relatable
-                    and actionable.
-
-                </p>
-
-            </article>
-
-
-            <article class="awareness-card">
-
-                <span class="awareness-date">
-                    HEALTH PROMOTION
-                </span>
-
-                <h3>
-                    Prevention &amp; Healthy Living
-                </h3>
-
-                <p>
-
-                    We encourage practical steps that individuals,
-                    families and communities can take to protect
-                    and improve their health.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PUBLICATIONS
-===================================================== -->
-
-<section id="publications" class="section section-soft">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                NGHI RESOURCES
-            </span>
-
-            <h2>
-                Health Publications
-            </h2>
-
-            <p>
-
-                Public-facing health resources developed by NGHI
-                to make important health information easier to
-                understand.
-
-            </p>
-
-        </div>
-
-
-        <div class="publication-grid">
-
-
-            <!-- HEPATITIS -->
-
-            <article class="publication-card">
-
-                <div class="publication-top">
-
-                    <span class="publication-type">
-                        HEALTH BULLETIN
-                    </span>
-
-                    <span class="publication-icon">
-                        PDF
-                    </span>
-
-                </div>
-
-
-                <h3>
-                    Hepatitis Awareness
-                </h3>
-
-
-                <p>
-
-                    A health bulletin providing accessible
-                    information about hepatitis, prevention,
-                    risk factors and the importance of awareness.
-
-                </p>
-
-
-                <a
-                    href="pdfs/hepatitis-awareness.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="publication-link"
-                >
-                    Read Bulletin
-                    <span>→</span>
-                </a>
-
-            </article>
-
-
-
-            <!-- BREASTFEEDING -->
-
-            <article class="publication-card">
-
-                <div class="publication-top">
-
-                    <span class="publication-type">
-                        MATERNAL &amp; CHILD HEALTH
-                    </span>
-
-                    <span class="publication-icon">
-                        PDF
-                    </span>
-
-                </div>
-
-
-                <h3>
-                    Breastfeeding: Beyond Feeding a Baby
-                </h3>
-
-
-                <p>
-
-                    An educational resource exploring
-                    breastfeeding beyond nutrition and highlighting
-                    its wider importance to maternal and child health.
-
-                </p>
-
-
-                <a
-                    href="pdfs/breastfeeding-beyond-feeding-a-baby.pdf"
-                    target="_blank"
-                 <li>
-                    <a href="#focus">Focus Areas</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#awareness">Awareness</a>
-                </li>
-
-                <li>
-                    <a href="#publications">Publications</a>
-                </li>
-
-                <li>
-                    <a href="#impact">Impact</a>
-                </li>
-
-                <li>
-                    <a href="#volunteer">Volunteer</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
-</header>
-
-
-
-<main>
-
-
-<!-- ==================================================
-     HERO
-================================================== -->
-
-<section id="home" class="hero">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <span class="hero-tag">
-                NextGen Health Initiative (NGHI)
-            </span>
-
-
-            <h1>
-
-                Healthier People.
-
-                <span>
-                    Stronger Communities.
-                </span>
-
-                Better Tomorrow.
-
-            </h1>
-
-
-            <p>
-
-                NextGen Health Initiative is a youth-led public health
-                organization working to improve health knowledge,
-                strengthen communities and contribute to evidence-informed
-                solutions to public health challenges.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a
-                    href="#about"
-                    class="btn btn-primary"
-                >
-                    Learn About NGHI
-                </a>
-
-
-                <a
-                    href="#projects"
-                    class="btn btn-secondary"
-                >
-                    Explore Our Work
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     ABOUT
-================================================== -->
-
-<section id="about">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                About NGHI
-            </h2>
-
-            <p>
-                Building a healthier future through knowledge,
-                research, community engagement and practical action.
-            </p>
-
-        </div>
-
-
-
-        <div class="about-grid">
-
-
-            <div class="about-text">
-
-                <h3>
-                    Who We Are
-                </h3>
-
-
-                <p>
-
-                    NextGen Health Initiative (NGHI) is a youth-led
-                    public health organization committed to making
-                    health information more understandable, accessible
-                    and useful to individuals and communities.
-
-                </p>
-
-
-                <p>
-
-                    We work at the intersection of health education,
-                    research, community engagement and public health
-                    advocacy.
-
-                </p>
-
-
-                <p>
-
-                    Our approach is practical and community-focused:
-                    we identify health challenges, communicate evidence
-                    clearly and support actions that can contribute to
-                    healthier communities.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="about-text">
-
-                <h3>
-                    Our Vision
-                </h3>
-
-
-                <p>
-
-                    A healthier society where individuals and
-                    communities have the knowledge, opportunities and
-                    support needed to make informed health decisions.
-
-                </p>
-
-
-                <h3>
-                    Our Mission
-                </h3>
-
-
-                <p>
-
-                    To promote better health outcomes through health
-                    education, evidence-informed research, community
-                    engagement and collaboration.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     FOUNDER
-================================================== -->
-
-<section id="founder" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Meet the Founder
-            </h2>
-
-            <p>
-                The person behind the vision and development of
-                NextGen Health Initiative.
-            </p>
-
-        </div>
-
-
-
-        <div class="about-grid">
-
-
-            <div class="about-text">
-
-                <h3>
-                    Olawuwo Idris Adeniyi
-                </h3>
-
-
-                <p>
-
-                    <strong>
-                        Founder &amp; Team Lead,
-                        NextGen Health Initiative
-                    </strong>
-
-                </p>
-
-
-                <p>
-
-                    Idris Adeniyi is an Anatomy graduate with a growing
-                    focus on public health research, health education,
-                    epidemiology and community health.
-
-                </p>
-
-
-                <p>
-
-                    He founded NextGen Health Initiative with the goal
-                    of creating a platform where health information,
-                    research and community action can come together to
-                    address practical health challenges.
-
-                </p>
-
-
-                <p>
-
-                    His work spans public health research,
-                    health communication, evidence synthesis and
-                    community-focused initiatives.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="https://idrisolawuwo.github.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        View Founder's Portfolio
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="about-text">
-
-                <h3>
-                    Areas of Interest
-                </h3>
-
-
-                <p>
-                    • Public Health Research
-                </p>
-
-                <p>
-                    • Epidemiology
-                </p>
-
-                <p>
-                    • Community Health
-                </p>
-
-                <p>
-                    • Health Education &amp; Communication
-                </p>
-
-                <p>
-                    • Maternal &amp; Child Health
-                </p>
-
-                <p>
-                    • Environmental Health
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     FOCUS AREAS
-================================================== -->
-
-<section id="focus">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Our Focus Areas
-            </h2>
-
-            <p>
-
-                Our work responds to practical health challenges
-                affecting individuals, families and communities.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    +
-                </div>
-
-                <h3>
-                    Community Health
-                </h3>
-
-                <p>
-
-                    Promoting practical health knowledge and
-                    community-based approaches to improve health
-                    outcomes.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ⌕
-                </div>
-
-                <h3>
-                    Research &amp; Epidemiology
-                </h3>
-
-                <p>
-
-                    Supporting public health research and the use of
-                    evidence to better understand health challenges.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ♥
-                </div>
-
-                <h3>
-                    Maternal &amp; Child Health
-                </h3>
-
-                <p>
-
-                    Supporting health education and awareness around
-                    maternal, newborn and child health.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ◉
-                </div>
-
-                <h3>
-                    Environmental Health
-                </h3>
-
-                <p>
-
-                    Promoting healthier environments through awareness
-                    of sanitation, waste management and environmental
-                    health risks.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ✦
-                </div>
-
-                <h3>
-                    Health Education
-                </h3>
-
-                <p>
-
-                    Translating health information into clear,
-                    relatable and actionable messages for the public.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ↗
-                </div>
-
-                <h3>
-                    Health Advocacy
-                </h3>
-
-                <p>
-
-                    Encouraging informed conversations and practical
-                    action around important public health issues.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PROJECTS
-================================================== -->
-
-<section id="projects" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Projects &amp; Research
-            </h2>
-
-            <p>
-
-                Selected work and initiatives demonstrating our
-                commitment to evidence-informed public health action.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="project-grid">
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Antimicrobial Resistance
-                </span>
-
-                <h3>
-                    Responsible Antibiotic Use &amp; AMR
-                </h3>
-
-                <p>
-
-                    Exploring antibiotic-use behaviours and knowledge
-                    gaps, with a focus on responsible antibiotic use
-                    and antimicrobial resistance.
+                    decisions and achieve better health outcomes.
 
                 </p>
 
@@ -1459,1235 +409,29 @@
 
 
 
-            <article class="project">
+            <article class="mission-card">
 
-                <span class="project-tag">
-                    Public Health Research
-                </span>
-
-                <h3>
-                    Cholera Research Project
-                </h3>
-
-                <p>
-
-                    Contributing to research and evidence synthesis
-                    around cholera, including literature review,
-                    scientific evidence annotation and research
-                    manuscript development.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Health Education
-                </span>
-
-                <h3>
-                    Community Health Education
-                </h3>
-
-                <p>
-
-                    Developing accessible health information and
-                    educational activities that help people understand
-                    everyday health risks and prevention strategies.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Health Communication
-                </span>
-
-                <h3>
-                    Online Health Talks &amp; Webinars
-                </h3>
-
-                <p>
-
-                    Creating spaces for practical conversations around
-                    public health topics, prevention, healthy
-                    behaviours and community wellbeing.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     AWARENESS
-================================================== -->
-
-<section id="awareness">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Health Awareness
-            </h2>
-
-            <p>
-
-                Public health awareness campaigns highlighting important
-                health observances, health risks and practical actions
-                individuals and communities can take.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="project-grid">
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Health Awareness
-                </span>
-
-                <h3>
-                    World Hepatitis Day
-                </h3>
-
-                <p>
-
-                    Raising awareness about viral hepatitis, prevention,
-                    testing and the importance of timely action.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Maternal &amp; Child Health
-                </span>
-
-                <h3>
-                    Breastfeeding Awareness
-                </h3>
-
-                <p>
-
-                    Promoting accurate and accessible information about
-                    breastfeeding and its importance to maternal and
-                    child health.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Disease Prevention
-                </span>
-
-                <h3>
-                    Malaria Awareness
-                </h3>
-
-                <p>
-
-                    Supporting public awareness around malaria prevention,
-                    early recognition and appropriate health-seeking
-                    behaviour.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Public Health
-                </span>
-
-                <h3>
-                    Health Observance Campaigns
-                </h3>
-
-                <p>
-
-                    Developing educational content around major public
-                    health observances and community health priorities.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PUBLICATIONS
-================================================== -->
-
-<section id="publications" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Health Publications
-            </h2>
-
-            <p>
-
-                Public-facing health resources developed by NGHI to
-                make important health information easier to understand.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="publication-list">
-
-
-            <!-- HEPATITIS -->
-
-            <article class="publication">
-
-                <span class="project-tag">
-                    Health Bulletin
-                </span>
-
-
-                <h3>
-                    Hepatitis Awareness
-                </h3>
-
-
-                <p>
-
-                    A health bulletin providing accessible information
-                    about hepatitis, prevention, risk factors and the
-                    importance of awareness.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="pdfs/hepatitis-awareness.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        Read Publication
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- BREASTFEEDING -->
-
-            <article class="publication">
-
-                <span class="project-tag">
-                    Maternal &amp; Child Health
-                </span>
-
-
-                <h3>
-                    Breastfeeding: Beyond Feeding a Baby
-                </h3>
-
-
-                <p>
-
-                    An educational resource exploring breastfeeding
-                    beyond nutrition and highlighting its wider
-                    importance to maternal and child health.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="pdfs/breastfeeding-beyond-feeding-a-baby.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        Read Publication
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PROGRAMS
-================================================== -->
-
-<section id="programs" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Programs &amp; Activities
-            </h2>
-
-            <p>
-
-                NGHI uses education, conversations and community
-                engagement to connect public health knowledge with
-                everyday life.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ▶
-                </div>
-
-                <h3>
-                    Online Health Talks
-                </h3>
-
-                <p>
-
-                    Interactive sessions focused on practical health
-                    topics and everyday disease prevention.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card================================================== -->
-
-<section id="home" class="hero">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <span class="hero-tag">
-                NextGen Health Initiative (NGHI)
-            </span>
-
-
-            <h1>
-
-                Healthier People.
-
-                <span>
-                    Stronger Communities.
-                </span>
-
-                Better Tomorrow.
-
-            </h1>
-
-
-            <p>
-
-                NextGen Health Initiative is a youth-led public health
-                organization working to improve health knowledge,
-                strengthen communities and contribute to evidence-informed
-                solutions to public health challenges.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a
-                    href="#about"
-                    class="btn btn-primary"
-                >
-                    Learn About NGHI
-                </a>
-
-
-                <a
-                    href="#projects"
-                    class="btn btn-secondary"
-                >
-                    Explore Our Work
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     ABOUT
-================================================== -->
-
-<section id="about">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                About NGHI
-            </h2>
-
-            <p>
-                Building a healthier future through knowledge,
-                research, community engagement and practical action.
-            </p>
-
-        </div>
-
-
-
-        <div class="about-grid">
-
-
-            <div class="about-text">
-
-                <h3>
-                    Who We Are
-                </h3>
-
-
-                <p>
-
-                    NextGen Health Initiative (NGHI) is a youth-led
-                    public health organization committed to making
-                    health information more understandable, accessible
-                    and useful to individuals and communities.
-
-                </p>
-
-
-                <p>
-
-                    We work at the intersection of health education,
-                    research, community engagement and public health
-                    advocacy.
-
-                </p>
-
-
-                <p>
-
-                    Our approach is practical and community-focused:
-                    we identify health challenges, communicate evidence
-                    clearly and support actions that can contribute to
-                    healthier communities.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="about-text">
-
-                <h3>
-                    Our Vision
-                </h3>
-
-
-                <p>
-
-                    A healthier society where individuals and
-                    communities have the knowledge, opportunities and
-                    support needed to make informed health decisions.
-
-                </p>
-
-
-                <h3>
-                    Our Mission
-                </h3>
-
-
-                <p>
-
-                    To promote better health outcomes through health
-                    education, evidence-informed research, community
-                    engagement and collaboration.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     FOUNDER
-================================================== -->
-
-<section id="founder" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Meet the Founder
-            </h2>
-
-            <p>
-                The person behind the vision and development of
-                NextGen Health Initiative.
-            </p>
-
-        </div>
-
-
-
-        <div class="about-grid">
-
-
-            <div class="about-text">
-
-                <h3>
-                    Olawuwo Idris Adeniyi
-                </h3>
-
-
-                <p>
-
-                    <strong>
-                        Founder &amp; Team Lead,
-                        NextGen Health Initiative
-                    </strong>
-
-                </p>
-
-
-                <p>
-
-                    Idris Adeniyi is an Anatomy graduate with a growing
-                    focus on public health research, health education,
-                    epidemiology and community health.
-
-                </p>
-
-
-                <p>
-
-                    He founded NextGen Health Initiative with the goal
-                    of creating a platform where health information,
-                    research and community action can come together to
-                    address practical health challenges.
-
-                </p>
-
-
-                <p>
-
-                    His work spans public health research,
-                    health communication, evidence synthesis and
-                    community-focused initiatives.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="https://idrisolawuwo.github.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        View Founder's Portfolio
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="about-text">
-
-                <h3>
-                    Areas of Interest
-                </h3>
-
-
-                <p>
-                    • Public Health Research
-                </p>
-
-                <p>
-                    • Epidemiology
-                </p>
-
-                <p>
-                    • Community Health
-                </p>
-
-                <p>
-                    • Health Education &amp; Communication
-                </p>
-
-                <p>
-                    • Maternal &amp; Child Health
-                </p>
-
-                <p>
-                    • Environmental Health
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     FOCUS AREAS
-================================================== -->
-
-<section id="focus">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Our Focus Areas
-            </h2>
-
-            <p>
-
-                Our work responds to practical health challenges
-                affecting individuals, families and communities.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    +
-                </div>
-
-                <h3>
-                    Community Health
-                </h3>
-
-                <p>
-
-                    Promoting practical health knowledge and
-                    community-based approaches to improve health
-                    outcomes.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ⌕
-                </div>
-
-                <h3>
-                    Research &amp; Epidemiology
-                </h3>
-
-                <p>
-
-                    Supporting public health research and the use of
-                    evidence to better understand health challenges.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ♥
-                </div>
-
-                <h3>
-                    Maternal &amp; Child Health
-                </h3>
-
-                <p>
-
-                    Supporting health education and awareness around
-                    maternal, newborn and child health.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ◉
-                </div>
-
-                <h3>
-                    Environmental Health
-                </h3>
-
-                <p>
-
-                    Promoting healthier environments through awareness
-                    of sanitation, waste management and environmental
-                    health risks.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ✦
-                </div>
-
-                <h3>
-                    Health Education
-                </h3>
-
-                <p>
-
-                    Translating health information into clear,
-                    relatable and actionable messages for the public.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ↗
-                </div>
-
-                <h3>
-                    Health Advocacy
-                </h3>
-
-                <p>
-
-                    Encouraging informed conversations and practical
-                    action around important public health issues.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PROJECTS
-================================================== -->
-
-<section id="projects" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Projects &amp; Research
-            </h2>
-
-            <p>
-
-                Selected work and initiatives demonstrating our
-                commitment to evidence-informed public health action.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="project-grid">
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Antimicrobial Resistance
-                </span>
-
-                <h3>
-                    Responsible Antibiotic Use &amp; AMR
-                </h3>
-
-                <p>
-
-                    Exploring antibiotic-use behaviours and knowledge
-                    gaps, with a focus on responsible antibiotic use
-                    and antimicrobial resistance.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Public Health Research
-                </span>
-
-                <h3>
-                    Cholera Research Project
-                </h3>
-
-                <p>
-
-                    Contributing to research and evidence synthesis
-                    around cholera, including literature review,
-                    scientific evidence annotation and research
-                    manuscript development.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Health Education
-                </span>
-
-                <h3>
-                    Community Health Education
-                </h3>
-
-                <p>
-
-                    Developing accessible health information and
-                    educational activities that help people understand
-                    everyday health risks and prevention strategies.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Health Communication
-                </span>
-
-                <h3>
-                    Online Health Talks &amp; Webinars
-                </h3>
-
-                <p>
-
-                    Creating spaces for practical conversations around
-                    public health topics, prevention, healthy
-                    behaviours and community wellbeing.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PUBLICATIONS
-================================================== -->
-
-<section id="publications">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Health Publications
-            </h2>
-
-            <p>
-
-                Public-facing health resources developed by NGHI to
-                make important health information easier to understand.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="publication-list">
-
-
-            <!-- HEPATITIS -->
-
-            <article class="publication">
-
-                <span class="project-tag">
-                    Health Bulletin
-                </span>
-
-
-                <h3>
-                    Hepatitis Awareness
-                </h3>
-
-
-                <p>
-
-                    A health bulletin providing accessible information
-                    about hepatitis, prevention, risk factors and the
-                    importance of awareness.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="pdfs/hepatitis-awareness.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        Read Publication
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- BREASTFEEDING -->
-
-            <article class="publication">
-
-                <span class="project-tag">
-                    Maternal &amp; Child Health
-                </span>
-
-
-                <h3>
-                    Breastfeeding: Beyond Feeding a Baby
-                </h3>
-
-
-                <p>
-
-                    An educational resource exploring breastfeeding
-                    beyond nutrition and highlighting its wider
-                    importance to maternal and child health.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="pdfs/breastfeeding-beyond-feeding-a-baby.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        Read Publication
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PROGRAMS
-================================================== -->
-
-<section id="programs" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Programs &amp; Activities
-            </h2>
-
-            <p>
-
-                NGHI uses education, conversations and community
-                engagement to connect public health knowledge with
-                everyday life.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ▶
-                </div>
-
-                <h3>
-                    Online Health Talks
-                </h3>
-
-                <p>
-
-                    Interactive sessions focused on practical health
-                    topics and everyday disease prevention.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ◆
-                </div>
-
-                <h3>
-                    Public Health Webinars
-                </h3>
-
-                <p>
-
-                    Online discussions bringing together health
-                    knowledge, perspectives and practical solutions.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ▣
-                </div>
-
-                <h3>
-                    Health Campaigns
-                </h3>
-
-                <p>
-
-                    Awareness campaigns designed around important
-                    public health observances and community needs.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     IMPACT
-================================================== -->
-
-<section id="impact">
-
-    <div class="container impact">
-
-
-        <div class="section-title">
-
-            <h2>
-                Our Impact
-            </h2>
-
-            <p>
-
-                We are building our impact through research,
-                education, communication and community-focused
-                initiatives.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="impact-grid">
-
-
-            <div class="impact-box">
-
-                <h3>
-                    01
-                </h3>
-
-                <p>
-                    Evidence-informed research
-                </p>
-
-            </div>
-
-
-
-            <div class="impact-box">
-
-                <h3>
-                    02
-                </h3>
-
-                <p>
-                    Public health education
-                </p>
-
-            </div>
-
-
-
-            <div class="impact-box">
-
-                <h3>
+                <div class="mission-icon">
                     03
+                </div>
+
+
+                <h3>
+                    Our Approach
                 </h3>
 
+
                 <p>
-                    Community engagement
+
+                    We bring together research, education,
+                    community participation and partnerships
+                    to support practical responses to public
+                    health challenges.
+
                 </p>
 
-            </div>
+            </article>
+
 
         </div>
 
@@ -2697,119 +441,241 @@
 
 
 
-<!-- ==================================================
-     GET INVOLVED
-================================================== -->
+<!-- =====================================================
+     CORE PROGRAMMES
+===================================================== -->
 
-<section id="involved" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Get Involved
-            </h2>
-
-            <p>
-
-                Building healthier communities requires collaboration.
-                There are several ways to work with NGHI.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    +
-                </div>
-
-                <h3>
-                    Volunteer
-                </h3>
-
-                <p>
-
-               
-            </ul>
-
-        </nav>
-
-    </div>
-
-</header>
-
-
-
-<main>
-
-
-<!-- ==================================================
-     HERO
-================================================== -->
-
-<section id="home" class="hero">
+<section class="section programmes-section" id="programmes">
 
     <div class="container">
 
-        <div class="hero-content">
 
-            <span class="hero-tag">
-                NextGen Health Initiative (NGHI)
+        <div class="section-heading">
+
+            <span class="section-label">
+                OUR PROGRAMMES
             </span>
 
 
-            <h1>
-
-                Healthier People.
-
-                <span>
-                    Stronger Communities.
-                </span>
-
-                Better Tomorrow.
-
-            </h1>
+            <h2>
+                Areas Where We Focus Our Efforts
+            </h2>
 
 
             <p>
 
-                NextGen Health Initiative is a youth-led public health
-                organization working to improve health knowledge,
-                strengthen communities and contribute to evidence-informed
-                solutions to public health challenges.
+                Our programmes reflect the different ways
+                we contribute to public health development
+                and community wellbeing.
 
             </p>
 
+        </div>
 
-            <div class="hero-buttons">
 
-                <a
-                    href="#about"
-                    class="btn btn-primary"
-                >
-                    Learn About NGHI
+
+        <div class="programme-grid">
+
+
+            <article class="programme-card">
+
+                <div class="programme-icon">
+                    01
+                </div>
+
+
+                <h3>
+                    Public Health Research
+                </h3>
+
+
+                <p>
+
+                    Supporting research, evidence generation
+                    and the use of scientific information
+                    to better understand public health challenges.
+
+                </p>
+
+
+                <a href="research.html" class="text-link">
+
+                    Explore Research →
+
                 </a>
 
+            </article>
 
-                <a
-                    href="#projects"
-                    class="btn btn-secondary"
-                >
-                    Explore Our Work
+
+
+            <article class="programme-card">
+
+                <div class="programme-icon">
+                    02
+                </div>
+
+
+                <h3>
+                    Health Education & Promotion
+                </h3>
+
+
+                <p>
+
+                    Making health information accessible,
+                    understandable and useful through
+                    education and health promotion activities.
+
+                </p>
+
+
+                <a href="programmes.html" class="text-link">
+
+                    Learn More →
+
                 </a>
 
-            </div>
+            </article>
+
+
+
+            <article class="programme-card">
+
+                <div class="programme-icon">
+                    03
+                </div>
+
+
+                <h3>
+                    Community Health Development
+                </h3>
+
+
+                <p>
+
+                    Encouraging community participation and
+                    supporting approaches that address
+                    health needs at the community level.
+
+                </p>
+
+
+                <a href="programmes.html" class="text-link">
+
+                    Learn More →
+
+                </a>
+
+            </article>
+
+
+
+            <article class="programme-card">
+
+                <div class="programme-icon">
+                    04
+                </div>
+
+
+                <h3>
+                    Advocacy & Communication
+                </h3>
+
+
+                <p>
+
+                    Promoting informed conversations,
+                    responsible health communication and
+                    advocacy around important public health issues.
+
+                </p>
+
+
+                <a href="advocacy.html" class="text-link">
+
+                    Explore Advocacy →
+
+                </a>
+
+            </article>
+
+
+
+            <article class="programme-card">
+
+                <div class="programme-icon">
+                    05
+                </div>
+
+
+                <h3>
+                    Capacity Development
+                </h3>
+
+
+                <p>
+
+                    Encouraging learning, knowledge sharing
+                    and opportunities for young people to
+                    contribute meaningfully to health development.
+
+                </p>
+
+
+                <a href="programmes.html" class="text-link">
+
+                    Learn More →
+
+                </a>
+
+            </article>
+
+
+
+            <article class="programme-card">
+
+                <div class="programme-icon">
+                    06
+                </div>
+
+
+                <h3>
+                    Partnerships & Collaboration
+                </h3>
+
+
+                <p>
+
+                    Building relationships with institutions,
+                    organisations and individuals working
+                    towards shared public health goals.
+
+                </p>
+
+
+                <a href="partnerships.html" class="text-link">
+
+                    Partner With Us →
+
+                </a>
+
+            </article>
+
 
         </div>
+
+
+
+        <div class="section-bottom-link">
+
+            <a href="programmes.html" class="btn btn-outline">
+
+                View All Programmes
+
+            </a>
+
+        </div>
+
 
     </div>
 
@@ -2817,423 +683,32 @@
 
 
 
-<!-- ==================================================
-     ABOUT
-================================================== -->
+<!-- =====================================================
+     FEATURED PROJECTS
+===================================================== -->
 
-<section id="about">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                About NGHI
-            </h2>
-
-            <p>
-                Building a healthier future through knowledge,
-                research, community engagement and practical action.
-            </p>
-
-        </div>
-
-
-
-        <div class="about-grid">
-
-
-            <div class="about-text">
-
-                <h3>
-                    Who We Are
-                </h3>
-
-
-                <p>
-
-                    NextGen Health Initiative (NGHI) is a youth-led
-                    public health organization committed to making
-                    health information more understandable, accessible
-                    and useful to individuals and communities.
-
-                </p>
-
-
-                <p>
-
-                    We work at the intersection of health education,
-                    research, community engagement and public health
-                    advocacy.
-
-                </p>
-
-
-                <p>
-
-                    Our approach is practical and community-focused:
-                    we identify health challenges, communicate evidence
-                    clearly and support actions that can contribute to
-                    healthier communities.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="about-text">
-
-                <h3>
-                    Our Vision
-                </h3>
-
-
-                <p>
-
-                    A healthier society where individuals and
-                    communities have the knowledge, opportunities and
-                    support needed to make informed health decisions.
-
-                </p>
-
-
-                <h3>
-                    Our Mission
-                </h3>
-
-
-                <p>
-
-                    To promote better health outcomes through health
-                    education, evidence-informed research, community
-                    engagement and collaboration.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     FOUNDER
-================================================== -->
-
-<section id="founder" class="section-light">
+<section class="section projects-section section-soft"
+         id="projects">
 
     <div class="container">
 
 
-        <div class="section-title">
+        <div class="section-heading">
+
+            <span class="section-label">
+                OUR WORK IN ACTION
+            </span>
+
 
             <h2>
-                Meet the Founder
+                Projects & Initiatives
             </h2>
 
-            <p>
-                The person behind the vision and development of
-                NextGen Health Initiative.
-            </p>
-
-        </div>
-
-
-
-        <div class="about-grid">
-
-
-            <div class="about-text">
-
-                <h3>
-                    Olawuwo Idris Adeniyi
-                </h3>
-
-
-                <p>
-
-                    <strong>
-                        Founder &amp; Team Lead,
-                        NextGen Health Initiative
-                    </strong>
-
-                </p>
-
-
-                <p>
-
-                    Idris Adeniyi is an Anatomy graduate with a growing
-                    focus on public health research, health education,
-                    epidemiology and community health.
-
-                </p>
-
-
-                <p>
-
-                    He founded NextGen Health Initiative with the goal
-                    of creating a platform where health information,
-                    research and community action can come together to
-                    address practical health challenges.
-
-                </p>
-
-
-                <p>
-
-                    His work spans public health research,
-                    health communication, evidence synthesis and
-                    community-focused initiatives.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="https://idrisolawuwo.github.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        View Founder's Portfolio
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="about-text">
-
-                <h3>
-                    Areas of Interest
-                </h3>
-
-
-                <p>
-                    • Public Health Research
-                </p>
-
-                <p>
-                    • Epidemiology
-                </p>
-
-                <p>
-                    • Community Health
-                </p>
-
-                <p>
-                    • Health Education &amp; Communication
-                </p>
-
-                <p>
-                    • Maternal &amp; Child Health
-                </p>
-
-                <p>
-                    • Environmental Health
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     FOCUS AREAS
-================================================== -->
-
-<section id="focus">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Our Focus Areas
-            </h2>
 
             <p>
 
-                Our work responds to practical health challenges
-                affecting individuals, families and communities.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    +
-                </div>
-
-                <h3>
-                    Community Health
-                </h3>
-
-                <p>
-
-                    Promoting practical health knowledge and
-                    community-based approaches to improve health
-                    outcomes.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ⌕
-                </div>
-
-                <h3>
-                    Research &amp; Epidemiology
-                </h3>
-
-                <p>
-
-                    Supporting public health research and the use of
-                    evidence to better understand health challenges.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ♥
-                </div>
-
-                <h3>
-                    Maternal &amp; Child Health
-                </h3>
-
-                <p>
-
-                    Supporting health education and awareness around
-                    maternal, newborn and child health.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ◉
-                </div>
-
-                <h3>
-                    Environmental Health
-                </h3>
-
-                <p>
-
-                    Promoting healthier environments through awareness
-                    of sanitation, waste management and environmental
-                    health risks.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ✦
-                </div>
-
-                <h3>
-                    Health Education
-                </h3>
-
-                <p>
-
-                    Translating health information into clear,
-                    relatable and actionable messages for the public.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ↗
-                </div>
-
-                <h3>
-                    Health Advocacy
-                </h3>
-
-                <p>
-
-                    Encouraging informed conversations and practical
-                    action around important public health issues.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PROJECTS
-================================================== -->
-
-<section id="projects" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Projects &amp; Research
-            </h2>
-
-            <p>
-
-                Selected work and initiatives demonstrating our
-                commitment to evidence-informed public health action.
+                Explore some of the public health issues
+                and initiatives that inform our work.
 
             </p>
 
@@ -3244,2677 +719,252 @@
         <div class="project-grid">
 
 
-            <article class="project">
+            <article class="project-card">
 
-                <span class="project-tag">
-                    Antimicrobial Resistance
-                </span>
+                <div class="project-image">
 
-                <h3>
-                    Responsible Antibiotic Use &amp; AMR
-                </h3>
-
-                <p>
-
-                    Exploring antibiotic-use behaviours and knowledge
-                    gaps, with a focus on responsible antibiotic use
-                    and antimicrobial resistance.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Public Health Research
-                </span>
-
-                <h3>
-                    Cholera Research Project
-                </h3>
-
-                <p>
-
-                    Contributing to research and evidence synthesis
-                    around cholera, including literature review,
-                    scientific evidence annotation and research
-                    manuscript development.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Health Education
-                </span>
-
-                <h3>
-                    Community Health Education
-                </h3>
-
-                <p>
-
-                    Developing accessible health information and
-                    educational activities that help people understand
-                    everyday health risks and prevention strategies.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="project">
-
-                <span class="project-tag">
-                    Health Communication
-                </span>
-
-                <h3>
-                    Online Health Talks &amp; Webinars
-                </h3>
-
-                <p>
-
-                    Creating spaces for practical conversations around
-                    public health topics, prevention, healthy
-                    behaviours and community wellbeing.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PUBLICATIONS
-================================================== -->
-
-<section id="publications">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Health Publications
-            </h2>
-
-            <p>
-
-                Public-facing health resources developed by NGHI to
-                make important health information easier to understand.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="publication-list">
-
-
-            <!-- HEPATITIS -->
-
-            <article class="publication">
-
-                <span class="project-tag">
-                    Health Bulletin
-                </span>
-
-
-                <h3>
-                    Hepatitis Awareness
-                </h3>
-
-
-                <p>
-
-                    A health bulletin providing accessible information
-                    about hepatitis, prevention, risk factors and the
-                    importance of awareness.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="pdfs/hepatitis-awareness.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        Read Publication
-                    </a>
+                    <img src="images/amr-project.jpg"
+                         alt="Antimicrobial resistance awareness">
 
                 </div>
 
-            </article>
 
+                <div class="project-content">
 
-
-            <!-- BREASTFEEDING -->
-
-            <article class="publication">
-
-                <span class="project-tag">
-                    Maternal &amp; Child Health
-                </span>
-
-
-                <h3>
-                    Breastfeeding: Beyond Feeding a Baby
-                </h3>
-
-
-                <p>
-
-                    An educational resource exploring breastfeeding
-                    beyond nutrition and highlighting its wider
-                    importance to maternal and child health.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="pdfs/breastfeeding-beyond-feeding-a-baby.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                    >
-                        Read Publication
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     PROGRAMS
-================================================== -->
-
-<section id="programs" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Programs &amp; Activities
-            </h2>
-
-            <p>
-
-                NGHI uses education, conversations and community
-                engagement to connect public health knowledge with
-                everyday life.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ▶
-                </div>
-
-                <h3>
-                    Online Health Talks
-                </h3>
-
-                <p>
-
-                    Interactive sessions focused on practical health
-                    topics and everyday disease prevention.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ◆
-                </div>
-
-                <h3>
-                    Public Health Webinars
-                </h3>
-
-                <p>
-
-                    Online discussions bringing together health
-                    knowledge, perspectives and practical solutions.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    ▣
-                </div>
-
-                <h3>
-                    Health Campaigns
-                </h3>
-
-                <p>
-
-                    Awareness campaigns designed around important
-                    public health observances and community needs.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     IMPACT
-================================================== -->
-
-<section id="impact">
-
-    <div class="container impact">
-
-
-        <div class="section-title">
-
-            <h2>
-                Our Impact
-            </h2>
-
-            <p>
-
-                We are building our impact through research,
-                education, communication and community-focused
-                initiatives.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="impact-grid">
-
-
-            <div class="impact-box">
-
-                <h3>
-                    01
-                </h3>
-
-                <p>
-                    Evidence-informed research
-                </p>
-
-            </div>
-
-
-
-            <div class="impact-box">
-
-                <h3>
-                    02
-                </h3>
-
-                <p>
-                    Public health education
-                </p>
-
-            </div>
-
-
-
-            <div class="impact-box">
-
-                <h3>
-                    03
-                </h3>
-
-                <p>
-                    Community engagement
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     GET INVOLVED
-================================================== -->
-
-<section id="involved" class="section-light">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                Get Involved
-            </h2>
-
-            <p>
-
-                Building healthier communities requires collaboration.
-                There are several ways to work with NGHI.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="card-icon">
-                    +
-                </div>
-
-                <h3>
-                    Volunteer
-                </h3>
-
-                <p>
-
-                    Join our growing network of people interested in
-                    contributing to public health initiatives.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="card"
-            <div class="container">
-
-                <div class="hero-content">
-
-                    <span class="hero-tag">
-                        NextGen Health Initiative (NGHI)
+                    <span class="project-category">
+                        ANTIMICROBIAL RESISTANCE
                     </span>
 
-                    <h1>
-                        Healthier People.
-                        <span>Stronger Communities.</span>
-                        Better Tomorrow.
-                    </h1>
-
-                    <p>
-                        NextGen Health Initiative is a youth-led public health
-                        organization working to improve health knowledge,
-                        strengthen communities and contribute to evidence-based
-                        solutions to public health challenges.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#about" class="btn btn-primary">
-                            Learn About NGHI
-                        </a>
-
-                        <a href="#projects" class="btn btn-secondary">
-                            Explore Our Work
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>About NGHI</h2>
-
-                    <p>
-                        Building a healthier future through knowledge,
-                        research, community engagement and practical action.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <h3>Who We Are</h3>
-
-                        <p>
-                            NextGen Health Initiative (NGHI) is a youth-led
-                            public health organization committed to making
-                            health information more understandable, accessible
-                            and useful to individuals and communities.
-                        </p>
-
-                        <p>
-                            We work at the intersection of health education,
-                            research, community engagement and public health
-                            advocacy.
-                        </p>
-
-                        <p>
-                            Our approach is practical and community-focused:
-                            we identify health challenges, communicate evidence
-                            clearly and support actions that can contribute to
-                            healthier communities.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-text">
-
-                        <h3>Our Vision</h3>
-
-                        <p>
-                            A healthier society where individuals and
-                            communities have the knowledge, opportunities and
-                            support needed to make informed health decisions.
-                        </p>
-
-                        <h3>Our Mission</h3>
-
-                        <p>
-                            To promote better health outcomes through health
-                            education, evidence-informed research, community
-                            engagement and collaboration.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= FOUNDER ================= -->
-
-        <section id="founder" class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Meet the Founder</h2>
-
-                    <p>
-                        The person behind the vision and development of
-                        NextGen Health Initiative.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <h3>Olawuwo Idris Adeniyi</h3>
-
-                        <p>
-                            <strong>
-                                Founder &amp; Team Lead, NextGen Health Initiative
-                            </strong>
-                        </p>
-
-                        <p>
-                            Idris Adeniyi is a public health professional with
-                            a background in Anatomy and a growing focus on
-                            public health research, health education,
-                            epidemiology and community health.
-                        </p>
-
-                        <p>
-                            He founded NextGen Health Initiative with the goal
-                            of creating a platform where health information,
-                            research and community action can come together to
-                            address practical health challenges.
-                        </p>
-
-                        <p>
-                            His work spans public health research, health
-                            communication, evidence synthesis and
-                            community-focused initiatives.
-                        </p>
-
-
-                        <div class="hero-buttons">
-
-                            <a
-                                href="https://idrisolawuwo.github.io/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-primary"
-                            >
-                                View Founder’s Portfolio
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-text">
-
-                        <h3>Areas of Interest</h3>
-
-                        <p>
-                            • Public Health Research
-                        </p>
-
-                        <p>
-                            • Epidemiology
-                        </p>
-
-                        <p>
-                            • Community Health
-                        </p>
-
-                        <p>
-                            • Health Education &amp; Communication
-                        </p>
-
-                        <p>
-                            • Maternal &amp; Child Health
-                        </p>
-
-                        <p>
-                            • Environmental Health
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= FOCUS AREAS ================= -->
-
-        <section id="focus">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Our Focus Areas</h2>
-
-                    <p>
-                        Our work responds to practical health challenges
-                        affecting individuals, families and communities.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">+</div>
-
-                        <h3>Community Health</h3>
-
-                        <p>
-                            Promoting practical health knowledge and
-                            community-based approaches to improve health
-                            outcomes.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">⌕</div>
-
-                        <h3>Research &amp; Epidemiology</h3>
-
-                        <p>
-                            Supporting public health research and the use of
-                            evidence to better understand health challenges.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">♥</div>
-
-                        <h3>Maternal &amp; Child Health</h3>
-
-                        <p>
-                            Supporting health education and awareness around
-                            maternal, newborn and child health.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">◉</div>
-
-                        <h3>Environmental Health</h3>
-
-                        <p>
-                            Promoting healthier environments through awareness
-                            of sanitation, waste management and environmental
-                            health risks.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">✦</div>
-
-                        <h3>Health Education</h3>
-
-                        <p>
-                            Translating health information into clear,
-                            relatable and actionable messages for the public.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">↗</div>
-
-                        <h3>Health Advocacy</h3>
-
-                        <p>
-                            Encouraging informed conversations and practical
-                            action around important public health issues.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects" class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Projects &amp; Research</h2>
-
-                    <p>
-                        Selected work and initiatives demonstrating our
-                        commitment to evidence-informed public health action.
-                    </p>
-
-                </div>
-
-
-                <div class="project-grid">
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Antimicrobial Resistance
-                        </span>
-
-                        <h3>
-                            Responsible Antibiotic Use &amp; AMR
-                        </h3>
-
-                        <p>
-                            Exploring antibiotic-use behaviours and knowledge
-                            gaps, with a focus on responsible antibiotic use
-                            and antimicrobial resistance.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Public Health Research
-                        </span>
-
-                        <h3>
-                            Cholera Research Project
-                        </h3>
-
-                        <p>
-                            Contributing to research and evidence synthesis
-                            around cholera, including literature review,
-                            scientific evidence annotation and research
-                            manuscript development.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Health Education
-                        </span>
-
-                        <h3>
-                            Community Health Education
-                        </h3>
-
-                        <p>
-                            Developing accessible health information and
-                            educational activities that help people understand
-                            everyday health risks and prevention strategies.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Health Communication
-                        </span>
-
-                        <h3>
-                            Online Health Talks &amp; Webinars
-                        </h3>
-
-                        <p>
-                            Creating spaces for practical conversations around
-                            public health topics, prevention, healthy
-                            behaviours and community wellbeing.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PUBLICATIONS ================= -->
-
-        <section id="publications">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Health Publications</h2>
-
-                    <p>
-                        Public-facing health resources developed to make
-                        important health information easier to understand.
-                    </p>
-
-                </div>
-
-
-                <div class="publication-list">
-
-
-                    <article class="publication">
-
-                        <h3>
-                            Hepatitis Awareness
-                        </h3>
-
-                        <p>
-                            A health bulletin highlighting important
-                            information about hepatitis, prevention and the
-                            importance of awareness.
-                        </p>
-
-                    </article>
-
-
-                    <article class="publication">
-
-                        <h3>
-                            Breastfeeding: Beyond Feeding a Baby
-                        </h3>
-
-                        <p>
-                            An educational resource exploring breastfeeding
-                            beyond nutrition and highlighting its wider
-                            importance to maternal and child health.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROGRAMS ================= -->
-
-        <section class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Programs &amp; Activities</h2>
-
-                    <p>
-                        NGHI uses education, conversations and community
-                        engagement to connect public health knowledge with
-                        everyday life.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">▶</div>
-
-                        <h3>Online Health Talks</h3>
-
-                        <p>
-                            Interactive sessions focused on practical health
-                            topics and everyday disease prevention.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">◆</div>
-
-                        <h3>Public Health Webinars</h3>
-
-                        <p>
-                            Online discussions bringing together health
-                            knowledge, perspectives and practical solutions.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">▣</div>
-
-                        <h3>Health Campaigns</h3>
-
-                        <p>
-                            Awareness campaigns designed around important
-                            public health observances and community needs.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= IMPACT ================= -->
-
-        <section id="impact">
-
-            <div class="container impact">
-
-                <div class="section-title">
-
-                    <h2>Our Impact</h2>
-
-                    <p>
-                        We are building our impact through research, education,
-                        communication and community-focused initiatives.
-                    </p>
-
-                </div>
-
-
-                <div class="impact-grid">
-
-
-                    <div class="impact-box">
-
-                        <h3>01</h3>
-
-                        <p>
-                            Evidence-informed research
-                        </p>
-
-                    </div>
-
-
-                    <div class="impact-box">
-
-                        <h3>02</h3>
-
-                        <p>
-                            Public health education
-                        </p>
-
-                    </div>
-
-
-                    <div class="impact-box">
-
-                        <h3>03</h3>
-
-                        <p>
-                            Community engagement
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= GET INVOLVED ================= -->
-
-        <section>
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Get Involved</h2>
-
-                    <p>
-                        Building healthier communities requires collaboration.
-                        There are several ways to work with NGHI.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">+</div>
-
-                        <h3>Volunteer</h3>
-
-                        <p>
-                            Join our growing network of people interested in
-                            contributing to public health initiatives.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">↔</div>
-
-                        <h3>Partner</h3>
-
-                        <p>
-                            Collaborate with NGHI on programs, campaigns,
-                            research and community initiatives.
-                        </p>
-
-        
-            <div class="container">
-
-                <div class="hero-content">
-
-                    <span class="hero-tag">
-                        NextGen Health Initiative (NGHI)
-                    </span>
-
-                    <h1>
-                        Healthier People.
-                        <span>Stronger Communities.</span>
-                        Better Tomorrow.
-                    </h1>
-
-                    <p>
-                        NextGen Health Initiative is a youth-led public health
-                        organization working to improve health knowledge,
-                        strengthen communities and contribute to evidence-based
-                        solutions to public health challenges.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#about" class="btn btn-primary">
-                            Learn About NGHI
-                        </a>
-
-                        <a href="#projects" class="btn btn-secondary">
-                            Explore Our Work
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>About NGHI</h2>
-
-                    <p>
-                        Building a healthier future through knowledge,
-                        research, community engagement and practical action.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <h3>Who We Are</h3>
-
-                        <p>
-                            NextGen Health Initiative (NGHI) is a youth-led
-                            public health organization committed to making
-                            health information more understandable, accessible
-                            and useful to individuals and communities.
-                        </p>
-
-                        <p>
-                            We work at the intersection of health education,
-                            research, community engagement and public health
-                            advocacy.
-                        </p>
-
-                        <p>
-                            Our approach is practical and community-focused:
-                            we identify health challenges, communicate evidence
-                            clearly and support actions that can contribute to
-                            healthier communities.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-text">
-
-                        <h3>Our Vision</h3>
-
-                        <p>
-                            A healthier society where individuals and
-                            communities have the knowledge, opportunities and
-                            support needed to make informed health decisions.
-                        </p>
-
-                        <h3>Our Mission</h3>
-
-                        <p>
-                            To promote better health outcomes through health
-                            education, evidence-informed research, community
-                            engagement and collaboration.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= FOUNDER ================= -->
-
-        <section id="founder" class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Meet the Founder</h2>
-
-                    <p>
-                        The person behind the vision and development of
-                        NextGen Health Initiative.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <h3>Olawuwo Idris Adeniyi</h3>
-
-                        <p>
-                            <strong>
-                                Founder &amp; Team Lead, NextGen Health Initiative
-                            </strong>
-                        </p>
-
-                        <p>
-                            Idris Adeniyi is a public health professional with
-                            a background in Anatomy and a growing focus on
-                            public health research, health education,
-                            epidemiology and community health.
-                        </p>
-
-                        <p>
-                            He founded NextGen Health Initiative with the goal
-                            of creating a platform where health information,
-                            research and community action can come together to
-                            address practical health challenges.
-                        </p>
-
-                        <p>
-                            His work spans public health research, health
-                            communication, evidence synthesis and
-                            community-focused initiatives.
-                        </p>
-
-
-                        <div class="hero-buttons">
-
-                            <a
-                                href="https://idrisolawuwo.github.io/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-primary"
-                            >
-                                View Founder’s Portfolio
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-text">
-
-                        <h3>Areas of Interest</h3>
-
-                        <p>
-                            • Public Health Research
-                        </p>
-
-                        <p>
-                            • Epidemiology
-                        </p>
-
-                        <p>
-                            • Community Health
-                        </p>
-
-                        <p>
-                            • Health Education &amp; Communication
-                        </p>
-
-                        <p>
-                            • Maternal &amp; Child Health
-                        </p>
-
-                        <p>
-                            • Environmental Health
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= FOCUS AREAS ================= -->
-
-        <section id="focus">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Our Focus Areas</h2>
-
-                    <p>
-                        Our work responds to practical health challenges
-                        affecting individuals, families and communities.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">+</div>
-
-                        <h3>Community Health</h3>
-
-                        <p>
-                            Promoting practical health knowledge and
-                            community-based approaches to improve health
-                            outcomes.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">⌕</div>
-
-                        <h3>Research &amp; Epidemiology</h3>
-
-                        <p>
-                            Supporting public health research and the use of
-                            evidence to better understand health challenges.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">♥</div>
-
-                        <h3>Maternal &amp; Child Health</h3>
-
-                        <p>
-                            Supporting health education and awareness around
-                            maternal, newborn and child health.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">◉</div>
-
-                        <h3>Environmental Health</h3>
-
-                        <p>
-                            Promoting healthier environments through awareness
-                            of sanitation, waste management and environmental
-                            health risks.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">✦</div>
-
-                        <h3>Health Education</h3>
-
-                        <p>
-                            Translating health information into clear,
-                            relatable and actionable messages for the public.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">↗</div>
-
-                        <h3>Health Advocacy</h3>
-
-                        <p>
-                            Encouraging informed conversations and practical
-                            action around important public health issues.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects" class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Projects &amp; Research</h2>
-
-                    <p>
-                        Selected work and initiatives demonstrating our
-                        commitment to evidence-informed public health action.
-                    </p>
-
-                </div>
-
-
-                <div class="project-grid">
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Antimicrobial Resistance
-                        </span>
-
-                        <h3>
-                            Responsible Antibiotic Use &amp; AMR
-                        </h3>
-
-                        <p>
-                            Exploring antibiotic-use behaviours and knowledge
-                            gaps, with a focus on responsible antibiotic use
-                            and antimicrobial resistance.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Public Health Research
-                        </span>
-
-                        <h3>
-                            Cholera Research Project
-                        </h3>
-
-                        <p>
-                            Contributing to research and evidence synthesis
-                            around cholera, including literature review,
-                            scientific evidence annotation and research
-                            manuscript development.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Health Education
-                        </span>
-
-                        <h3>
-                            Community Health Education
-                        </h3>
-
-                        <p>
-                            Developing accessible health information and
-                            educational activities that help people understand
-                            everyday health risks and prevention strategies.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Health Communication
-                        </span>
-
-                        <h3>
-                            Online Health Talks &amp; Webinars
-                        </h3>
-
-                        <p>
-                            Creating spaces for practical conversations around
-                            public health topics, prevention, healthy
-                            behaviours and community wellbeing.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PUBLICATIONS ================= -->
-
-        <section id="publications">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Health Publications</h2>
-
-                    <p>
-                        Public-facing health resources developed to make
-                        important health information easier to understand.
-                    </p>
-
-                </div>
-
-
-                <div class="publication-list">
-
-
-                    <article class="publication">
-
-                        <h3>
-                            Hepatitis Awareness
-                        </h3>
-
-                        <p>
-                            A health bulletin highlighting important
-                            information about hepatitis, prevention and the
-                            importance of awareness.
-                        </p>
-
-                    </article>
-
-
-                    <article class="publication">
-
-                        <h3>
-                            Breastfeeding: Beyond Feeding a Baby
-                        </h3>
-
-                        <p>
-                            An educational resource exploring breastfeeding
-                            beyond nutrition and highlighting its wider
-                            importance to maternal and child health.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROGRAMS ================= -->
-
-        <section class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Programs &amp; Activities</h2>
-
-                    <p>
-                        NGHI uses education, conversations and community
-                        engagement to connect public health knowledge with
-                        everyday life.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">▶</div>
-
-                        <h3>Online Health Talks</h3>
-
-                        <p>
-                            Interactive sessions focused on practical health
-                            topics and everyday disease prevention.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">◆</div>
-
-                        <h3>Public Health Webinars</h3>
-
-                        <p>
-                            Online discussions bringing together health
-                            knowledge, perspectives and practical solutions.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">▣</div>
-
-                        <h3>Health Campaigns</h3>
-
-                        <p>
-                            Awareness campaigns designed around important
-                            public health observances and community needs.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= IMPACT ================= -->
-
-        <section id="impact">
-
-            <div class="container impact">
-
-                <div class="section-title">
-
-                    <h2>Our Impact</h2>
-
-                    <p>
-                        We are building our impact through research, education,
-                        communication and community-focused initiatives.
-                    </p>
-
-                </div>
-
-
-                <div class="impact-grid">
-
-
-                    <div class="impact-box">
-
-                        <h3>01</h3>
-
-                        <p>
-                            Evidence-informed research
-                        </p>
-
-                    </div>
-
-
-                    <div class="impact-box">
-
-                        <h3>02</h3>
-
-                        <p>
-                            Public health education
-                        </p>
-
-                    </div>
-
-
-                    <div class="impact-box">
-
-                        <h3>03</h3>
-
-                        <p>
-                            Community engagement
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= GET INVOLVED ================= -->
-
-        <section>
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Get Involved</h2>
-
-                    <p>
-                        Building healthier communities requires collaboration.
-                        There are several ways to work with NGHI.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">+</div>
-
-                        <h3>Volunteer</h3>
-
-                        <p>
-                            Join our growing network of people interested in
-                            contributing to public health initiatives.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">↔</div>
-
-                        <h3>Partner</h3>
-
-                        <p>
-                            Collaborate with NGHI on programs, campaigns,
-                            research and community initiatives.
-                        </p>
-
-        
-        <section id="home" class="hero">
-
-            <div class="container">
-
-                <div class="hero-content">
-
-                    <span class="hero-tag">
-                        NextGen Health Initiative (NGHI)
-                    </span>
-
-                    <h1>
-                        Healthier People.
-                        <span>Stronger Communities.</span>
-                        Better Tomorrow.
-                    </h1>
-
-                    <p>
-                        NextGen Health Initiative is a youth-led public health
-                        organization working to improve health knowledge,
-                        strengthen communities and contribute to evidence-based
-                        solutions to public health challenges.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#about" class="btn btn-primary">
-                            Learn About NGHI
-                        </a>
-
-                        <a href="#projects" class="btn btn-secondary">
-                            Explore Our Work
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>About NGHI</h2>
-
-                    <p>
-                        Building a healthier future through knowledge,
-                        research, community engagement and practical action.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <h3>Who We Are</h3>
-
-                        <p>
-                            NextGen Health Initiative (NGHI) is a youth-led
-                            public health organization committed to making
-                            health information more understandable, accessible
-                            and useful to individuals and communities.
-                        </p>
-
-                        <p>
-                            We work at the intersection of health education,
-                            research, community engagement and public health
-                            advocacy.
-                        </p>
-
-                        <p>
-                            Our approach is practical and community-focused:
-                            we identify health challenges, communicate evidence
-                            clearly and support actions that can contribute to
-                            healthier communities.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-text">
-
-                        <h3>Our Vision</h3>
-
-                        <p>
-                            A healthier society where individuals and
-                            communities have the knowledge, opportunities and
-                            support needed to make informed health decisions.
-                        </p>
-
-                        <h3>Our Mission</h3>
-
-                        <p>
-                            To promote better health outcomes through health
-                            education, evidence-informed research, community
-                            engagement and collaboration.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= FOUNDER ================= -->
-
-        <section id="founder" class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Meet the Founder</h2>
-
-                    <p>
-                        The person behind the vision and development of
-                        NextGen Health Initiative.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <h3>Olawuwo Idris Adeniyi</h3>
-
-                        <p>
-                            <strong>Founder & Team Lead, NextGen Health Initiative</strong>
-                        </p>
-
-                        <p>
-                            Idris Adeniyi is a public health professional with
-                            a background in Anatomy and a growing focus on
-                            public health research, health education,
-                            epidemiology and community health.
-                        </p>
-
-                        <p>
-                            He founded NextGen Health Initiative with the goal
-                            of creating a platform where health information,
-                            research and community action can come together to
-                            address practical health challenges.
-                        </p>
-
-                        <p>
-                            His work spans public health research, health
-                            communication, evidence synthesis and community-
-                            focused initiatives.
-                        </p>
-
-
-                        <div class="hero-buttons">
-
-                            <a
-                                href="https://idrisolawuwo.github.io/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-primary"
-                            >
-                                View Founder’s Portfolio
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-text">
-
-                        <h3>Areas of Interest</h3>
-
-                        <p>
-                            • Public Health Research
-                        </p>
-
-                        <p>
-                            • Epidemiology
-                        </p>
-
-                        <p>
-                            • Community Health
-                        </p>
-
-                        <p>
-                            • Health Education & Communication
-                        </p>
-
-                        <p>
-                            • Maternal & Child Health
-                        </p>
-
-                        <p>
-                            • Environmental Health
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= FOCUS AREAS ================= -->
-
-        <section id="focus">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Our Focus Areas</h2>
-
-                    <p>
-                        Our work responds to practical health challenges
-                        affecting individuals, families and communities.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">+</div>
-
-                        <h3>Community Health</h3>
-
-                        <p>
-                            Promoting practical health knowledge and
-                            community-based approaches to improve health
-                            outcomes.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">⌕</div>
-
-                        <h3>Research & Epidemiology</h3>
-
-                        <p>
-                            Supporting public health research and the use of
-                            evidence to better understand health challenges.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">♥</div>
-
-                        <h3>Maternal & Child Health</h3>
-
-                        <p>
-                            Supporting health education and awareness around
-                            maternal, newborn and child health.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">◉</div>
-
-                        <h3>Environmental Health</h3>
-
-                        <p>
-                            Promoting healthier environments through awareness
-                            of sanitation, waste management and environmental
-                            health risks.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">✦</div>
-
-                        <h3>Health Education</h3>
-
-                        <p>
-                            Translating health information into clear,
-                            relatable and actionable messages for the public.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">↗</div>
-
-                        <h3>Health Advocacy</h3>
-
-                        <p>
-                            Encouraging informed conversations and practical
-                            action around important public health issues.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects" class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Projects & Research</h2>
-
-                    <p>
-                        Selected work and initiatives demonstrating our
-                        commitment to evidence-informed public health action.
-                    </p>
-
-                </div>
-
-
-                <div class="project-grid">
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Antimicrobial Resistance
-                        </span>
-
-                        <h3>
-                            Responsible Antibiotic Use & AMR
-                        </h3>
-
-                        <p>
-                            Exploring antibiotic-use behaviours and knowledge
-                            gaps, with a focus on responsible antibiotic use
-                            and antimicrobial resistance.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Public Health Research
-                        </span>
-
-                        <h3>
-                            Cholera Research Project
-                        </h3>
-
-                        <p>
-                            Contributing to research and evidence synthesis
-                            around cholera, including literature review,
-                            scientific evidence annotation and research
-                            manuscript development.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Health Education
-                        </span>
-
-                        <h3>
-                            Community Health Education
-                        </h3>
-
-                        <p>
-                            Developing accessible health information and
-                            educational activities that help people understand
-                            everyday health risks and prevention strategies.
-                        </p>
-
-                    </article>
-
-
-                    <article class="project">
-
-                        <span class="project-tag">
-                            Health Communication
-                        </span>
-
-                        <h3>
-                            Online Health Talks & Webinars
-                        </h3>
-
-                        <p>
-                            Creating spaces for practical conversations around
-                            public health topics, prevention, healthy
-                            behaviours and community wellbeing.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PUBLICATIONS ================= -->
-
-        <section id="publications">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Health Publications</h2>
-
-                    <p>
-                        Public-facing health resources developed to make
-                        important health information easier to understand.
-                    </p>
-
-                </div>
-
-
-                <div class="publication-list">
-
-
-                    <article class="publication">
-
-                        <h3>
-                            Hepatitis Awareness
-                        </h3>
-
-                        <p>
-                            A health bulletin highlighting important
-                            information about hepatitis, prevention and the
-                            importance of awareness.
-                        </p>
-
-                    </article>
-
-
-                    <article class="publication">
-
-                        <h3>
-                            Breastfeeding: Beyond Feeding a Baby
-                        </h3>
-
-                        <p>
-                            An educational resource exploring breastfeeding
-                            beyond nutrition and highlighting its wider
-                            importance to maternal and child health.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PROGRAMS ================= -->
-
-        <section class="section-light">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Programs & Activities</h2>
-
-                    <p>
-                        NGHI uses education, conversations and community
-                        engagement to connect public health knowledge with
-                        everyday life.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">▶</div>
-
-                        <h3>Online Health Talks</h3>
-
-                        <p>
-                            Interactive sessions focused on practical health
-                            topics and everyday disease prevention.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">◆</div>
-
-                        <h3>Public Health Webinars</h3>
-
-                        <p>
-                            Online discussions bringing together health
-                            knowledge, perspectives and practical solutions.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">▣</div>
-
-                        <h3>Health Campaigns</h3>
-
-                        <p>
-                            Awareness campaigns designed around important
-                            public health observances and community needs.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= IMPACT ================= -->
-
-        <section id="impact">
-
-            <div class="container impact">
-
-                <div class="section-title">
-
-                    <h2>Our Impact</h2>
-
-                    <p>
-                        We are building our impact through research, education,
-                        communication and community-focused initiatives.
-                    </p>
-
-                </div>
-
-
-                <div class="impact-grid">
-
-
-                    <div class="impact-box">
-
-                        <h3>01</h3>
-
-                        <p>
-                            Evidence-informed research
-                        </p>
-
-                    </div>
-
-
-                    <div class="impact-box">
-
-                        <h3>02</h3>
-
-                        <p>
-                            Public health education
-                        </p>
-
-                    </div>
-
-
-                    <div class="impact-box">
-
-                        <h3>03</h3>
-
-                        <p>
-                            Community engagement
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= GET INVOLVED ================= -->
-
-        <section>
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Get Involved</h2>
-
-                    <p>
-                        Building healthier communities requires collaboration.
-                        There are several ways to work with NGHI.
-                    </p>
-
-                </div>
-
-
-                <div class="cards">
-
-
-                    <div class="card">
-
-                        <div class="card-icon">+</div>
-
-                        <h3>Volunteer</h3>
-
-                        <p>
-                            Join our growing network of people interested in
-                            contributing to public health initiatives.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">↔</div>
-
-                        <h3>Partner</h3>
-
-                        <p>
-                            Collaborate with NGHI on programs, campaigns,
-                            research and community initiatives.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <di
-
-
-                            <p>
-                            Collaborate with NGHI on programs, campaigns,
-                            research and community initiatives.
-                        </p>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <div class="card-icon">✦</div>
-
-                        <h3>Collaborate</h3>
-
-                        <p>
-                            Connect with us to explore opportunities for
-                            research, education and knowledge sharing.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section id="contact" class="cta">
-
-            <div class="container">
-
-                <h2>
-                    Let's Build Healthier Communities Together
-                </h2>
-
-                <p>
-                    Whether you are interested in volunteering, research,
-                    partnership or public health collaboration, we'd love to
-                    hear from you.
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <!-- EMAIL -->
-
-                    <a
-                        href="mailto:nextgenhealthinitiatives@gmail.com"
-                        class="btn btn-secondary"
-                    >
-                        Email NGHI
-                    </a>
-
-
-                    <!-- FACEBOOK -->
-
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100084921229150"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-secondary"
-                    >
-                        Facebook
-                    </a>
-
-
-                    <!-- LINKEDIN -->
-
-                    <a
-                        href="https://www.linkedin.com/company/nextgen-health-initiative/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-secondary"
-                    >
-                        LinkedIn
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <div>
 
                     <h3>
-                        NextGen Health Initiative
+                        Responsible Antibiotic Use
                     </h3>
 
+
                     <p>
-                        Healthier People. Stronger Communities. Better Tomorrow.
+
+                        Addressing knowledge gaps and behaviours
+                        associated with antibiotic use while
+                        promoting awareness of antimicrobial
+                        resistance and responsible medication practices.
+
                     </p>
 
+
+                    <a href="projects.html" class="text-link">
+
+                        Explore Initiative →
+
+                    </a>
+
                 </div>
 
+            </article>
 
-                <div>
 
-                    <h4>Explore</h4>
 
-                    <ul>
+            <article class="project-card">
 
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
+                <div class="project-image">
 
-                        <li>
-                            <a href="#founder">Founder</a>
-                        </li>
-
-                        <li>
-                            <a href="#focus">Focus Areas</a>
-                        </li>
-
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
-
-                        <li>
-                            <a href="#publications">Publications</a>
-                        </li>
-
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-
-                    </ul>
+                    <img src="images/cholera-research.jpg"
+                         alt="Public health research">
 
                 </div>
 
 
-                <div>
+                <div class="project-content">
 
-                    <h4>Connect With Us</h4>
+                    <span class="project-category">
+                        PUBLIC HEALTH RESEARCH
+                    </span>
 
-                    <ul>
 
-                        <li>
-                            <a href="mailto:nextgenhealthinitiatives@gmail.com">
-                                Email NGHI
-                            </a>
-                        </li>
+                    <h3>
+                        Cholera Research
+                    </h3>
 
-                        <li>
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100084921229150"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Facebook
-                            </a>
-                        </li>
 
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/company/nextgen-health-initiative/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                LinkedIn
-                            </a>
-                        </li>
+                    <p>
 
-                    </ul>
+                        Contributing to research and evidence
+                        synthesis relating to cholera through
+                        scientific literature review, evidence
+                        annotation and manuscript development.
+
+                    </p>
+
+
+                    <a href="research.html" class="text-link">
+
+                        Explore Research →
+
+                    </a>
 
                 </div>
+
+            </article>
+
+
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="images/community-health.jpg"
+                         alt="Community health education">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        COMMUNITY HEALTH
+                    </span>
+
+
+                    <h3>
+                        Community Health Education
+                    </h3>
+
+
+                    <p>
+
+                        Promoting accessible health information
+                        and encouraging informed decisions
+                        around disease prevention and healthy living.
+
+                    </p>
+
+
+                    <a href="projects.html" class="text-link">
+
+                        Explore Our Work →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <div class="section-bottom-link">
+
+            <a href="projects.html" class="btn btn-primary">
+
+                Explore All Projects
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESEARCH & PUBLICATIONS
+===================================================== -->
+
+<section class="section research-section"
+         id="research">
+
+    <div class="container">
+
+
+        <div class="research-intro">
+
+            <div>
+
+                <span class="section-label">
+                    KNOWLEDGE & EVIDENCE
+                </span>
+
+
+                <h2>
+                    Research That Informs Action
+                </h2>
 
             </div>
 
 
-            <div class="footer-bottom">
+            <div>
 
                 <p>
-                    &copy; 2026 NextGen Health Initiative.
-                    All rights reserved.
+
+                    Research is an important part of understanding
+                    health challenges and identifying opportunities
+                    for improvement.
+
+                    We support evidence generation, scientific
+                    knowledge sharing and the communication of
+                    relevant health information.
+
                 </p>
+
+
+                <a href="research.html" class="text-link">
+
+                    Visit Our Research Hub →
+
+                </a>
 
             </div>
 
         </div>
 
-    </footer>
 
 
-</body>
+        <div class="research-highlights">
 
-                    </html>
+
+            <div class="research-highlight">
+
+                <span class="research-number">
+                    01
+                </span>
+
+                <h3>
+                    Research Activities
+                </h3>
+
+                <p>
+                    Contributing to public health research
+                    and scientific evidence synthesis.
+                </p>
+
+            </div>
+
+
+
+            <div class="research-highlight">
+
+                <span class="research-number">
+                    02
+                </span>
+
+                <h3>
+                    Health Publications
+                </h3>
+
+                <p>
+                    Sharing accessible health resources
+                    and educational materials.
+                </p>
+
+            </div>
+
+
+
+            <div class="research-highlight">
+
+                <span class="research-number">
+   
